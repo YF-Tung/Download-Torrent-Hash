@@ -1,0 +1,19 @@
+{
+
+  "description": "Firefox addon that let you click BitTorrent infohash as magnet link",
+  "manifest_version": 2,
+  "name": "DownloadTorrentHash",
+  "version": "0.1-dev",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["downloadtorrenthash.js"]
+    }
+  ]
+
+}
